@@ -8,6 +8,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    transition: 0.4s;
+}
+
 main::-webkit-scrollbar {
     width: 8px;
     background-color: #0f100c2d;
