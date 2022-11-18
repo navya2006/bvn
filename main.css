@@ -36,7 +36,7 @@ main::-webkit-scrollbar-thumb {
 }
 
 /* SIDENAV */
-h1{
+.sidenav h1{
     font-size: 20px;
     color: #818181;
     font-family: 'Cabin, sans-serif';
@@ -46,7 +46,7 @@ h1{
     padding-bottom : 15%;
 }
 
-p{
+.sidenav p{
     position: absolute;
     padding-left: 20px;
     bottom: 0;
