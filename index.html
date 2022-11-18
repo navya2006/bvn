@@ -1,192 +1,346 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>
-            NeoHomes
-        </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-        
-        <script src="fontawesome.js"></script>
-        <script>
-            tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    pyrodarkgreen: '#0f100c',
-                    pyrowhite: '#f6f4f4',
-                    pyroyellow: '#cfb270',
-                  },
-                  backgroundImage: {
-                  'hero-bg': "url('images/bg.jpeg')",
-                 },
-                 fontFamily: {
-                  'poppins': 'Poppins, sans-serif',
-                  'cabin': 'Cabin, sans-serif',
-                  'lato': 'Lato, sans-serif',
-                 }
-                }
-              }
-            }
-          </script>
-    </head>
-    <body>
-        <main class="h-screen snap-y snap-mandatory overflow-y-scroll z-0 bg-pyrodarkgreen scroll-smooth font-cabin">
-            <nav class='sticky top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-20'>
-                <div class="flex flex-row items-center">
-                    <a href="#home">
-                      <img src="images/logo.png" alt="logo" class="h-[30px] opacity-80 hover:opacity-100 cursor-pointer transition transition-400 ease-in-out">
-                    </a>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NeoHomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@600&family=Lato:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-                <div class="flex flex-row items-center text-pyrowhite/80 gap-x-[20px]">
-                  <a href="#home" class="hover:text-pyrowhite transition transition-400 ease-in-out hidden md:block">Home</a>
-                  <a href="#about" class="hover:text-pyrowhite transition transition-400 ease-in-out">About</a>
-                  <a href="#gallery" class="hover:text-pyrowhite transition transition-400 ease-in-out">Gallery</a>
-                  <a href="#faq" class="hover:text-pyrowhite transition transition-400 ease-in-out">FAQ</a>
-                  <a href="#contact" class="hover:text-pyrowhite transition transition-400 ease-in-out">Contact</a>
-                </div>
-            </nav>
+    <script src="fontawesome.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pyrodarkgreen: "#0f100c",
+              pyrowhite: "#f6f4f4",
+              pyroyellow: "#cfb270",
+            },
+            backgroundImage: {
+              "hero-bg": "url('images/bg.jpeg')",
+            },
+            fontFamily: {
+              poppins: "Poppins, sans-serif",
+              cabin: "Cabin, sans-serif",
+              lato: "Lato, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main
+      class="h-screen snap-y snap-mandatory overflow-y-scroll z-0 bg-pyrodarkgreen scroll-smooth font-cabin"
+    >
+      <nav
+        class="sticky top-0 p-5 flex items-center justify-between w-screen pl-10 pr-20 z-20"
+      >
+        <div class="flex flex-row items-center">
+          <a href="#home">
+            <img
+              src="images/logo.png"
+              alt="logo"
+              class="h-[50px] opacity-80 hover:opacity-100 cursor-pointer transition transition-400 ease-in-out"
+            />
+          </a>
+        </div>
 
-            <section class="snap-center" id="home">
-                <div class="h-screen flex flex-col justify-center content-center text-center overflow-hidden bg-hero-bg bg-cover bg-center">
-                  <div class="h-screen w-screen relative flex flex-col justify-center items-center bg-pyrodarkgreen/70 z-10">
-                    <div class="z-20 space-y-[20px]">
-                      <h1 class="text-6xl lg:text-7xl font-semibold px-10 text-pyrowhite font-poppins border-b-2 border-b-pyroyellow/60 pb-4">NeoHomes</h1>
-                      <h3 class="text-xl lg:text-2xl uppercase text-gray-300">
-                        <span class="txt-type tracking-widest" data-wait="3000" data-words='["Architecture", "Design", "Visualisation"]'>&nbsp;</span>
-                        <span class="animate-ping -mx-2 text-pyroyellow">|</span>
-                      </h3>
-                    </div>
-                    <div class="absolute bottom-5 text-pyrowhite/80 animate-bounce">
-                      <a href="#about" class="hover:text-pyrowhite transition transition-400 ease-in-out">
-                        <p>Scroll</p>
-                        <i class="fas fa-chevron-down"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            </section>
+        <div class="flex flex-row items-center text-pyrowhite/80 gap-x-[20px]">
+          <a href="#home" class="nav-link nav-link-ltr">Home</a>
+          <a href="#about" class="nav-link nav-link-ltr">About</a>
+          <a href="#gallery" class="nav-link nav-link-ltr">Gallery</a>
+          <a href="#faq" class="nav-link nav-link-ltr">FAQ</a>
+          <a href="#contact" class="nav-link nav-link-ltr">Contact</a>
+          <a href="beige.html" class="nav-button">Customize Your House</a>
+        </div>
+      </nav>
 
-            <section class="snap-center" id="about">
-              <div class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8">
-                  <h3 class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato">Who we are</h3>
-                  <hr class="w-12 border-pyroyellow/40 self-center" />
-                <p class="text-3xl max-w-4xl mx-auto z-10 font-poppins">Make like a King, Live like a King. <br> NeoHomes provides you with the most premium housing solutions on this planet, and mars too!
-                  Endowed with the most advanced technology, our hub of smart-homes give you the royal and elegant experience.</p>
-                <div class="z-10"><a href="#contact" class="w-auto px-8 py-2 text-l border border-pyroyellow rounded-3xl uppercase tracking-widest cursor-pointer hover:text-pyrodarkgreen hover:bg-pyroyellow font-semibold transition transition-400 ease-in-out">Reach out to us</a></div>
-                <div class='w-full absolute top-4 bg-pyroyellow/10 animate-pulse left-0 h-[500px] -skew-y-12 z-0'></div>
+      <section class="snap-center" id="home">
+        <div
+          class="h-screen flex flex-col justify-center content-center text-center overflow-hidden bg-hero-bg bg-cover bg-center"
+        >
+          <div
+            class="h-screen w-screen relative flex flex-col justify-center items-center bg-pyrodarkgreen/70 z-10"
+          >
+            <div class="z-20 space-y-[20px]">
+              <h1
+                class="text-6xl lg:text-7xl font-semibold px-10 text-pyrowhite font-poppins border-b-2 border-b-pyroyellow/60 pb-4"
+              >
+                NeoHomes
+              </h1>
+              <h3 class="text-xl lg:text-2xl uppercase text-gray-300">
+                <span
+                  class="txt-type tracking-widest"
+                  data-wait="3000"
+                  data-words='["Architecture", "Design", "Visualisation"]'
+                  >&nbsp;</span
+                >
+                <span class="animate-ping -mx-2 text-pyroyellow">|</span>
+              </h3>
+            </div>
+            <div class="absolute bottom-5 text-pyrowhite/80 animate-bounce">
+              <a
+                href="#about"
+                class="hover:text-pyrowhite transition transition-400 ease-in-out"
+              >
+                <p>Scroll</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="snap-center" id="about">
+        <div
+          class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8"
+        >
+          <h3
+            class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato"
+          >
+            Who we are
+          </h3>
+          <hr class="w-12 border-pyroyellow/40 self-center" />
+          <p class="text-3xl max-w-4xl mx-auto z-10 font-poppins">
+            Make like a King, Live like a King. <br />
+            NeoHomes provides you with the most premium housing solutions on
+            this planet, and mars too! Endowed with the most advanced
+            technology, our hub of smart-homes give you the royal and elegant
+            experience.
+          </p>
+          <div class="z-10">
+            <a
+              href="#contact"
+              class="w-auto px-8 py-2 text-l border border-pyroyellow rounded-3xl uppercase tracking-widest cursor-pointer hover:text-pyrodarkgreen hover:bg-pyroyellow font-semibold transition transition-400 ease-in-out"
+              >Reach out to us</a
+            >
+          </div>
+          <div
+            class="w-full absolute top-4 bg-pyroyellow/10 animate-pulse left-0 h-[500px] -skew-y-12 z-0"
+          ></div>
+        </div>
+      </section>
+
+      <section class="snap-center" id="gallery">
+        <div
+          class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8"
+        >
+          <h3
+            class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato"
+          >
+            Gallery
+          </h3>
+          <p class="text-md max-w-4xl mx-auto z-10 tracking-wider">
+            Take a look at some of our projects
+          </p>
+
+          <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10">
+            <div class="px-6 text-left w-full md:w-1/3">
+              <div class="justify-center img-container">
+                <img class="h-[230px] object-cover" src="images/g1.jpg" />
               </div>
-            </section>
+            </div>
 
-            <section class="snap-center" id="gallery">
-              <div class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8">
-                <h3 class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato">Gallery</h3>
-                <p class="text-md max-w-4xl mx-auto z-10 tracking-wider">Take a look at some of our projects</p>
-
-                <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10">
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <div class="justify-center img-container">
-                      <img class="h-[230px] object-cover" src="images/g1.jpg">
-                    </div>
-                  </div>
-
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <div class="justify-center img-container">
-                      <img class="h-[230px] object-cover" src="images/k1.jpeg">
-                    </div>
-                  </div>
-
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <div class="justify-center img-container">
-                      <img class="h-[230px] object-cover" src="images/b2.jpeg">
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10">
-                  <div class="px-6 text-left w-full md:w-1/2">
-                    <div class="justify-center img-container">
-                      <img class="h-[350px]" src="images/b1.jpg"></div>
-                  </div>
-                  <div class="px-6 text-left w-full md:w-1/2">
-                    <div class="justify-center img-container">
-                      <img class="h-[350px]" src="images/2-2-beige-interior-classical-living-room-stripy-arm-chairs-dark-wood-funrniture.jpg">
-                    </div>
-                  </div>
-                </div>
+            <div class="px-6 text-left w-full md:w-1/3">
+              <div class="justify-center img-container">
+                <img class="h-[230px] object-cover" src="images/k1.jpeg" />
               </div>
-            </section>
+            </div>
 
-            <section class="snap-start" id="faq">
-              <div class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-20">
-                <div class="space-y-8 flex flex-col">
-                <h3 class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato">Questions & Answers</h3>
-                <hr class="w-12 border-pyroyellow/40 self-center" />
-                <p class="text-md max-w-4xl mx-auto z-10 tracking-wider">Most common questions about our studio and the process in general. <br><span class="underline decoration-pyroyellow/70">Scroll</span> and find the answer.</p>
-                </div>
-                <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10 divide-x divide-pyroyellow/40">
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <h4 class="text-pyroyellow font-semibold text-l font-poppins">What type of payment do you accept?</h4>
-                    <p class="text-sm py-2">We accept the following payment methods: SWIFT, Visa, Mastercard, Cash, Cheque</p>
-                  </div>
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <h4 class="text-pyroyellow font-semibold text-l font-poppins">What are your working hours?</h4>
-                    <p class="text-sm py-2">Our online support works 9 AM to 9 PM IST (GMT+5:30). You can call, email or leave a message for us at any time.</p>
-                  </div>
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <h4 class="text-pyroyellow font-semibold text-l font-poppins">How much does it cost?</h4>
-                    <p class="text-sm py-2">For an exact price estimate, please send us a brief description of your project, along with any documents and requirements. You will get a quote within 1 day.</p>
-                  </div>
-                </div>
-                <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10 justify-center divide-x divide-pyroyellow/40">
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <h4 class="text-pyroyellow font-semibold text-l font-poppins">Can I own multiple properties together?</h4>
-                    <p class="text-sm py-2">As many as you need! The sky's the limit. We always have teams to take up the project of any scale, and they can work on your tasks simultaneously.</p>
-                  </div>
-                  <div class="px-6 text-left w-full md:w-1/3">
-                    <h4 class="text-pyroyellow font-semibold text-l font-poppins">How do you guarantee the quality?</h4>
-                    <p class="text-sm py-2">We use a thorough double quality control system. It consists of two levels — first, project managers check results. Next, mentors evaluate the work once again for compliance with aesthetic quality standards of the studio.</p>
-                  </div>
-                </div>
+            <div class="px-6 text-left w-full md:w-1/3">
+              <div class="justify-center img-container">
+                <img class="h-[230px] object-cover" src="images/b2.jpeg" />
               </div>
-            </section>
-
-            <section class="snap-start" id="contact">
-              <div class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8">
-                <h3 class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato">Contact Us</h3>
-                <hr class="w-12 border-pyroyellow/40 self-center" />
-                <h2 class="text-3xl max-w-4xl mx-auto z-10 tracking-wide font-poppins">We are always happy to <span class="underline decoration-pyroyellow/70">help</span></h2>
-                <form class="flex flex-col space-y-3 w-fit mx-auto">
-                  <div class="flex-col flex space-x-0 md:flex-row md:space-x-2 space-y-3 md:space-y-0">
-                    <input type="text" name="name" placeholder="Name" class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow">
-                    <input type="email" name="email" placeholder="Email" class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow">
-                  </div>
-                  <textarea name="message" placeholder="Enter your message here..." class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow"></textarea>
-                  <input type="submit" value="Submit" class="bg-pyroyellow/80 text-pyrodarkgreen font-semibold cursor-pointer px-6 py-3 w-full rounded-md hover:bg-pyroyellow transition transition-400 ease-in-out">
-                </form>
-                <div class="p-5 flex justify-between w-full md:w-3/5 z-20 self-center text-left">
-                  <div class="flex flex-col items-start gap-y-2">
-                    <a href="#home" class="py-2 border border-transparent border-b-pyroyellow text-l pr-4">NeoHomes</a>
-                    <p class="text-sm text-pyrowhite/70">&copy; Tagore International School, Vasant Vihar</p>
-                  </div>
-                  <div class="flex flex-row items-center ml-auto gap-x-[20px] text-xl text-pyrowhite/70">
-                    <a href="mailto:pyrotech@tagoreint.com" class="hover:text-pyrowhite transition transition-400 ease-in-out"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/school/tagore-international-school-vasant-vihar-/" class="hover:text-pyrowhite transition transition-400 ease-in-out"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/tagoreint_vasantvihar/" class="hover:text-pyrowhite transition transition-400 ease-in-out"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10">
+            <div class="px-6 text-left w-full md:w-1/2">
+              <div class="justify-center img-container">
+                <img class="h-[350px]" src="images/b1.jpg" />
               </div>
-            </section>
+            </div>
+            <div class="px-6 text-left w-full md:w-1/2">
+              <div class="justify-center img-container">
+                <img
+                  class="h-[350px]"
+                  src="images/2-2-beige-interior-classical-living-room-stripy-arm-chairs-dark-wood-funrniture.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </main>
+      <section class="snap-start" id="faq">
+        <div
+          class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-20"
+        >
+          <div class="space-y-8 flex flex-col">
+            <h3
+              class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato"
+            >
+              Questions & Answers
+            </h3>
+            <hr class="w-12 border-pyroyellow/40 self-center" />
+            <p class="text-md max-w-4xl mx-auto z-10 tracking-wider">
+              Most common questions about our studio and the process in general.
+              <br /><span class="underline decoration-pyroyellow/70"
+                >Scroll</span
+              >
+              and find the answer.
+            </p>
+          </div>
+          <div
+            class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10 divide-x divide-pyroyellow/40"
+          >
+            <div class="px-6 text-left w-full md:w-1/3">
+              <h4 class="text-pyroyellow font-semibold text-l font-poppins">
+                What type of payment do you accept?
+              </h4>
+              <p class="text-sm py-2">
+                We accept the following payment methods: SWIFT, Visa,
+                Mastercard, Cash, Cheque
+              </p>
+            </div>
+            <div class="px-6 text-left w-full md:w-1/3">
+              <h4 class="text-pyroyellow font-semibold text-l font-poppins">
+                What are your working hours?
+              </h4>
+              <p class="text-sm py-2">
+                Our online support works 9 AM to 9 PM IST (GMT+5:30). You can
+                call, email or leave a message for us at any time.
+              </p>
+            </div>
+            <div class="px-6 text-left w-full md:w-1/3">
+              <h4 class="text-pyroyellow font-semibold text-l font-poppins">
+                How much does it cost?
+              </h4>
+              <p class="text-sm py-2">
+                For an exact price estimate, please send us a brief description
+                of your project, along with any documents and requirements. You
+                will get a quote within 1 day.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col mx-auto md:flex-row gap-5 px-0 md:px-10 justify-center divide-x divide-pyroyellow/40"
+          >
+            <div class="px-6 text-left w-full md:w-1/3">
+              <h4 class="text-pyroyellow font-semibold text-l font-poppins">
+                Can I own multiple properties together?
+              </h4>
+              <p class="text-sm py-2">
+                As many as you need! The sky's the limit. We always have teams
+                to take up the project of any scale, and they can work on your
+                tasks simultaneously.
+              </p>
+            </div>
+            <div class="px-6 text-left w-full md:w-1/3">
+              <h4 class="text-pyroyellow font-semibold text-l font-poppins">
+                How do you guarantee the quality?
+              </h4>
+              <p class="text-sm py-2">
+                We use a thorough double quality control system. It consists of
+                two levels — first, project managers check results. Next,
+                mentors evaluate the work once again for compliance with
+                aesthetic quality standards of the studio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <script src="index.js"></script>
-        <script src="fontawesome.js"></script>
-    </body>
+      <section class="snap-start" id="contact">
+        <div
+          class="relative min-h-screen flex flex-col justify-center content-center text-center overflow-hidden text-pyrowhite space-y-8"
+        >
+          <h3
+            class="text-xl uppercase text-pyrowhite/70 tracking-[10px] z-10 font-lato"
+          >
+            Contact Us
+          </h3>
+          <hr class="w-12 border-pyroyellow/40 self-center" />
+          <h2
+            class="text-3xl max-w-4xl mx-auto z-10 tracking-wide font-poppins"
+          >
+            We are always happy to
+            <span class="underline decoration-pyroyellow/70">help</span>
+          </h2>
+          <form class="flex flex-col space-y-3 w-fit mx-auto">
+            <div
+              class="flex-col flex space-x-0 md:flex-row md:space-x-2 space-y-3 md:space-y-0"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow"
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Enter your message here..."
+              class="outline-none bg-slate-400/10 rounded-md border-b border-gray-600 px-6 py-4 text-gray-500 placeholder-pyrowhite/70 transition-all focus:text-pyrowhite focus:border-pyroyellow"
+            ></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              class="bg-pyroyellow/80 text-pyrodarkgreen font-semibold cursor-pointer px-6 py-3 w-full rounded-md hover:bg-pyroyellow transition transition-400 ease-in-out"
+            />
+          </form>
+          <div
+            class="p-5 flex justify-between w-full md:w-3/5 z-20 self-center text-left"
+          >
+            <div class="flex flex-col items-start gap-y-2">
+              <a
+                href="#home"
+                class="py-2 border border-transparent border-b-pyroyellow text-l pr-4"
+                >NeoHomes</a
+              >
+              <p class="text-sm text-pyrowhite/70">
+                &copy; Tagore International School, Vasant Vihar
+              </p>
+            </div>
+            <div
+              class="flex flex-row items-center ml-auto gap-x-[20px] text-xl text-pyrowhite/70"
+            >
+              <a
+                href="mailto:pyrotech@tagoreint.com"
+                class="hover:text-pyrowhite transition transition-400 ease-in-out"
+                ><i class="far fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/school/tagore-international-school-vasant-vihar-/"
+                class="hover:text-pyrowhite transition transition-400 ease-in-out"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/tagoreint_vasantvihar/"
+                class="hover:text-pyrowhite transition transition-400 ease-in-out"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="fontawesome.js"></script>
+  </body>
 </html>
