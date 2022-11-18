@@ -10,6 +10,7 @@ html {
 
 body {
   transition: 0.4s;
+  max-width: 100vw;
 }
 
 main::-webkit-scrollbar {
