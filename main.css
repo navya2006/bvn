@@ -79,10 +79,10 @@ main::-webkit-scrollbar-thumb {
   font-family: "Poppins", "sans-serif";
 }
 
-.sidenav a:hover {
+/* .sidenav a:hover {
   background-color: #eee;
   color: #111;
-}
+} */
 
 .main {
   margin-left: 25%;
