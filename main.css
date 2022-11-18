@@ -1,0 +1,21 @@
+main::-webkit-scrollbar {
+    width: 8px;
+    background-color: #0f100c2d;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #cfb2708d;
+    border-radius: 4px;
+}
+
+/* GALLERY */
+#gallery .img-container{
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#gallery img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
