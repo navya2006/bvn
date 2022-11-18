@@ -27,7 +27,9 @@ main::-webkit-scrollbar-thumb {
     overflow: hidden;
     transition: 0.5s;
 }
-
+#gallery img{
+    transition: 0.4s;
+}
 #gallery img:hover{
     transform: scale(1.1);
     transition: 0.4s;
